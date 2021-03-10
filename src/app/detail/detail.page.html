@@ -1,0 +1,65 @@
+<ion-content [fullscreen]="true">
+  <ion-header class="">
+    <div text-left style="margin-top: 10%; padding: 0 10px;"></div>
+    <ion-toolbar>
+      <ion-title size="large">
+        <ion-icon (click)="backpop()" name="return-up-back-outline"> </ion-icon>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div padding-horizontal text-center class="animated fadeInDown card-content">
+    <h2 ion-text class="text-primary">
+      <strong>{{tmpobj.placename}}</strong>
+    </h2>
+  </div>
+
+  <div class="animated fadeIn card-content">
+    <ion-col>
+      <div>
+        <ion-img src='{{tmpobj.img}}'></ion-img>
+      </div>
+
+      <div text-left style="margin-top: 3%; padding: 0 10px;"></div>
+
+      <ion-row>
+        <ion-label class="text-review"><strong>ชื่อสถานที่ท่องเที่ยว : {{tmpobj.placename}} </strong></ion-label>
+      </ion-row>
+
+      <div text-left style="margin-top: 3%; padding: 0 10px;"></div>
+
+      <ion-row>
+        <ion-col>
+          <ion-label class="text-review"><strong>วันที่ : </strong>{{tmpobj.date}}</ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-label class="text-review"><strong>ตำแหน่ง : </strong>{{tmpobj.location}}</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <div text-left style="margin-top: 3%; padding: 0 10px;"></div>
+  </div>
+
+  <div text-left style="margin-top: 3%; padding: 0 10px;"></div>
+
+  <div class="text-review-box animated fadeIn">
+    <div class="center-content">
+      <ion-label class="text-review"><strong>รีวิวสถานที่ท่องเที่ยว</strong></ion-label><br>
+    </div>
+    <ion-col>
+      <ion-label>{{tmpobj.txtreview}}</ion-label>
+    </ion-col>
+
+    <div text-left style="margin-top: 5%; padding: 0 10px;"></div>
+
+    <div class="center-content">
+      <ion-label class="text-review"><strong>ความประทับใจ</strong></ion-label><br>
+    </div>
+    <ion-col>
+      <ion-label>{{tmpobj.impressive}}</ion-label>
+    </ion-col>
+  </div>
+
+  <div text-left style="margin-top: 10%; padding: 0 10px;"></div>
+
+</ion-content>
