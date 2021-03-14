@@ -1,98 +1,112 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      เพิ่มการเดินทาง
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            เพิ่มการเดินทาง
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="animated fadeIn card-content">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title style="text-align: center;" size="large">เพิ่มการเดินทาง</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title style="text-align: center;" size="large">เพิ่มการเดินทาง</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <div>
-    <ion-card>
-      <ion-col>
-        <ion-row>
-          <ion-label class="text-review"><strong>หัวข้อการเดินทาง</strong></ion-label>
-        </ion-row>
-        <ion-row>
-          <ion-input [(ngModel)]="placename" type="text" name="placename" placeholder="กรอกชื่อสถานที่">
-          </ion-input>
-        </ion-row>
-      </ion-col>
-    </ion-card>
+    <div>
+        <ion-card>
+            <ion-col>
+                <ion-row>
+                    <ion-label class="text-review"><strong>หัวข้อการเดินทาง</strong></ion-label>
+                </ion-row>
+                <ion-row>
+                    <ion-input [(ngModel)]="placename" type="text" name="placename" placeholder="กรอกชื่อสถานที่">
+                    </ion-input>
+                </ion-row>
+            </ion-col>
+        </ion-card>
 
-    <ion-card>
-      <ion-col>
-        <ion-row>
-          <ion-label class="text-review"><strong>วันที่เดินทาง</strong></ion-label>
-        </ion-row>
-        <ion-row>
-          <ion-input [(ngModel)]="date" type="text" name="date" placeholder="ระบุวันที่เดินทาง">
-          </ion-input>
-        </ion-row>
-      </ion-col>
-    </ion-card>
+        <ion-card>
+            <ion-col>
+                <ion-row>
+                    <ion-label class="text-review"><strong>วันที่เดินทาง</strong></ion-label>
+                </ion-row>
+                <ion-row>
+                    <ion-input [(ngModel)]="date" type="text" name="date" placeholder="ระบุวันที่เดินทาง">
+                    </ion-input>
+                </ion-row>
+            </ion-col>
+        </ion-card>
 
-    <ion-card>
-      <ion-col>
-        <ion-row>
-          <ion-label class="text-review"><strong>ตำแหน่ง</strong></ion-label>
-        </ion-row>
-        <ion-row>
-          <ion-input [(ngModel)]="location" type="text" name="location" placeholder="กรอกตำแหน่งของสถานที่">
-          </ion-input>
-        </ion-row>
-      </ion-col>
-    </ion-card>
+        <ion-card>
+            <ion-col>
+                <ion-row>
+                    <ion-label class="text-review"><strong>ตำแหน่ง</strong></ion-label>
+                </ion-row>
+                <ion-row>
+                    <ion-input [(ngModel)]="location" type="text" name="location" placeholder="กรอกตำแหน่งของสถานที่">
+                    </ion-input>
+                </ion-row>
+            </ion-col>
+        </ion-card>
 
-    <ion-card>
-      <ion-col>
-        <ion-row>
-          <ion-label class="text-review"><strong>รีวิวสถานที่ท่องเที่ยว</strong></ion-label>
-        </ion-row>
-        <ion-row>
-          <ion-textarea rows="5" [(ngModel)]="txtreview" type="text" name="txtreview"
-            placeholder="กรอกข้อความรีวิวสถานที่ท่องเที่ยว">
-          </ion-textarea>
-        </ion-row>
-      </ion-col>
-    </ion-card>
+        <ion-card>
+            <ion-col>
+                <ion-row>
+                    <ion-label class="text-review"><strong>รีวิวสถานที่ท่องเที่ยว</strong></ion-label>
+                </ion-row>
+                <ion-row>
+                    <ion-textarea rows="5" [(ngModel)]="txtreview" type="text" name="txtreview" placeholder="กรอกข้อความรีวิวสถานที่ท่องเที่ยว">
+                    </ion-textarea>
+                </ion-row>
+            </ion-col>
+        </ion-card>
 
-    <ion-card>
-      <ion-col>
-        <ion-row>
-          <ion-label class="text-review"><strong>ความประทับใจ</strong></ion-label>
-        </ion-row>
-        <ion-row>
-          <ion-textarea rows="3" class="impressive" [(ngModel)]="impressive" type="text" name="impressive"
-            placeholder="กรอกความประทับใจ">
-          </ion-textarea>
-        </ion-row>
-      </ion-col>
-    </ion-card>
+        <ion-card>
+            <ion-col>
+                <ion-row>
+                    <ion-label class="text-review"><strong>ความประทับใจ</strong></ion-label>
+                </ion-row>
+                <ion-row>
+                    <ion-textarea rows="3" class="impressive" [(ngModel)]="impressive" type="text" name="impressive" placeholder="กรอกความประทับใจ">
+                    </ion-textarea>
+                </ion-row>
+            </ion-col>
+        </ion-card>
 
-    <ion-card>
-      <ion-col>
-        <ion-row>
-          <ion-label class="text-review"><strong>ลิ้งค์รูปภาพ</strong></ion-label>
-        </ion-row>
-        <ion-row>
-          <ion-input [(ngModel)]="img" type="text" maxlength="200" name="img" placeholder="กรอกลิ้งค์รูปภาพ">
-          </ion-input>
-        </ion-row>
-      </ion-col>
-    </ion-card>
-  </div>
+        <ion-card>
+            <ion-col>
+                <ion-row>
+                    <ion-label class="text-review"><strong>ลิ้งค์รูปภาพ</strong></ion-label>
+                </ion-row>
+                <ion-row>
+                    <ion-input [(ngModel)]="img" type="text" maxlength="200" name="img" placeholder="กรอกลิ้งค์รูปภาพ">
+                    </ion-input>
+                </ion-row>
+            </ion-col>
+        </ion-card>
 
-  <div>
-    <ion-button class="getstart" (click)="saveData()">
-      <ion-icon name='save' style="margin-right: 10px;"></ion-icon>
-      บันทึก
-    </ion-button>
-  </div>
+        <ion-card>
+            <ion-col>
+                <ion-row>
+                    <ion-label class="text-review"><strong>อัพโหลดรูปภาพ</strong></ion-label>
+                </ion-row>
+                <ion-row>
+                    <ion-icon style="margin-left: 10%; font-size: 25px;;" name="cloud-upload-outline"></ion-icon>
+                </ion-row>
+                <ion-row>
+                    <ion-input [(ngModel)]="fileimg" type="file" (change)="uploadFile($event.target.files)" name="fileimg">
+                    </ion-input>
+                    <a type="button" style="margin-top: 8px; margin-right: 3px; font-size: 18px;">x</a>
+                </ion-row>
+            </ion-col>
+        </ion-card>
+    </div>
+
+    <div>
+        <ion-button class="getstart" (click)="saveData()">
+            <ion-icon name='save' style="margin-right: 10px;"></ion-icon>
+            บันทึก
+        </ion-button>
+    </div>
 </ion-content>

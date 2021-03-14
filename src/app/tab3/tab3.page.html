@@ -1,39 +1,39 @@
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+    <ion-header collapse="condense">
+        <div text-left style="margin-top: 10%; padding: 0 10px;"></div>
+        <ion-toolbar>
+            <ion-title class="animated fadeIn" style="text-align: center;" size="large">แก้ไขรายการที่บันทึก</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
     <div text-left style="margin-top: 10%; padding: 0 10px;"></div>
-    <ion-toolbar>
-      <ion-title class="animated fadeIn" style="text-align: center;" size="large">แก้ไขรายการที่บันทึก</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div text-left style="margin-top: 10%; padding: 0 10px;"></div>
+    <ion-card>
+        <div class="animated fadeIn card-content">
+            <ion-item-sliding *ngFor="let list of this.tmpobj ">
+                <ion-item-options side="start"></ion-item-options>
 
-  <ion-card>
-    <div class="animated fadeIn card-content">
-      <ion-item-sliding *ngFor="let list of this.tmpobj ">
-        <ion-item-options side="start"></ion-item-options>
-
-        <ion-item class="text-base mt">
-          <ion-label class="font-style"><strong>{{list.placename}}</strong> </ion-label>
-          <ion-label style="font-family: Itim;">{{list.location}}</ion-label>
-          <ion-icon slot="end" name="chevron-back-outline"></ion-icon>
-        </ion-item>
+                <ion-item class="mt">
+                    <ion-label class="font-style"><strong>{{list.placename}}</strong> </ion-label>
+                    <ion-label style="font-family: Itim;">{{list.location}}</ion-label>
+                    <ion-icon slot="end" name="chevron-back-outline"></ion-icon>
+                </ion-item>
 
 
-        <ion-item-options class="mt" side="end">
+                <ion-item-options class="mt" side="end">
 
-          <ion-item-option style="font-family: Itim;" (click)="editData(list)" color="warning" expandable>
-            แก้ไข
-          </ion-item-option>
+                    <ion-item-option style="font-family: Itim;" (click)="editData(list)" color="warning" expandable>
+                        แก้ไข
+                    </ion-item-option>
 
-          <ion-item-option style="font-family: Itim;" (click)="delData(list)" color="danger" expandable>
-            ลบ
-          </ion-item-option>
+                    <ion-item-option style="font-family: Itim;" (click)="delData(list)" color="danger" expandable>
+                        ลบ
+                    </ion-item-option>
 
-        </ion-item-options>
-      </ion-item-sliding>
-    </div>
-  </ion-card>
+                </ion-item-options>
+            </ion-item-sliding>
+        </div>
+    </ion-card>
 
 
 </ion-content>

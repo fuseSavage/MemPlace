@@ -20,7 +20,7 @@ export class crudapi {
   }
 
   //cerate
-  cerateData(tmpdoc : any) {
+  createData(tmpdoc : any) {
     return this.fs.collection('reviews').add(tmpdoc);
   }
 
